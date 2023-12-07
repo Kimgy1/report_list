@@ -21,5 +21,10 @@ namespace list
         {
 
         }
+
+        private void delbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
