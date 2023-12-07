@@ -30,11 +30,13 @@
         {
             this.titlebox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.commentbox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titlebox
             // 
-            this.titlebox.Location = new System.Drawing.Point(126, 51);
+            this.titlebox.Location = new System.Drawing.Point(178, 51);
             this.titlebox.Name = "titlebox";
             this.titlebox.Size = new System.Drawing.Size(432, 35);
             this.titlebox.TabIndex = 18;
@@ -42,17 +44,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 51);
+            this.label1.Location = new System.Drawing.Point(92, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 24);
             this.label1.TabIndex = 17;
             this.label1.Text = "title";
+            // 
+            // commentbox
+            // 
+            this.commentbox.Location = new System.Drawing.Point(178, 124);
+            this.commentbox.Multiline = true;
+            this.commentbox.Name = "commentbox";
+            this.commentbox.Size = new System.Drawing.Size(432, 118);
+            this.commentbox.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "comment";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.commentbox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.titlebox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -66,6 +87,8 @@
 
         private System.Windows.Forms.TextBox titlebox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox commentbox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
