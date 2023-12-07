@@ -20,7 +20,14 @@ namespace list
 
         private void save_button_Click(object sender, EventArgs e)
         {
+            bool bCheckTable = false;
 
+            if (ds.Tables.Contains(comboBox_check.Text))
+            {
+                bCheckTable = true;
+            }
+
+            DataTable dt = null;
         }
 
         private void delbutton_Click(object sender, EventArgs e)
