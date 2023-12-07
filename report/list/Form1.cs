@@ -36,7 +36,9 @@ namespace list
                 DataColumn colTitle = new DataColumn("Title", typeof(string));
                 DataColumn colComment = new DataColumn("Comment", typeof(string));
                 DataColumn colCheck = new DataColumn("Check", typeof(string));
-                
+                DataColumn colDate = new DataColumn("Date", typeof(string));
+
+                dt.Columns.Add(colDate);
                 dt.Columns.Add(colTitle);
                 dt.Columns.Add(colComment);
                 dt.Columns.Add(colCheck);
@@ -51,7 +53,7 @@ namespace list
 
             row["Comment"] = commentbox.Text;
 
-
+            row["Date"] = datebox.Text;
 
             if (check1.Checked)
             {
@@ -77,6 +79,7 @@ namespace list
 
             titlebox.Text = "";
             commentbox.Text = "";
+            datebox.Text = "";
             comboBox_check.Text = "";
         }
         
@@ -97,6 +100,11 @@ namespace list
                 oRow.HeaderCell.Value = oRow.Index.ToString();
             }
             dataGridView1.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            datebox.Text = monthCalendar1.SelectionRange.Start.ToShortDateString();
         }
     }
 }
