@@ -39,7 +39,9 @@
             this.check1 = new System.Windows.Forms.RadioButton();
             this.save_button = new System.Windows.Forms.Button();
             this.delbutton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // titlebox
@@ -148,11 +150,22 @@
             this.delbutton.UseVisualStyleBackColor = true;
             this.delbutton.Click += new System.EventHandler(this.delbutton_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(38, 497);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 37;
+            this.dataGridView1.Size = new System.Drawing.Size(1020, 280);
+            this.dataGridView1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.delbutton);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
@@ -166,6 +179,7 @@
             this.Text = "Form1";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,6 +198,7 @@
         private System.Windows.Forms.RadioButton check1;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.Button delbutton;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
