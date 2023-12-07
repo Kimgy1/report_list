@@ -43,6 +43,8 @@
             this.delbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.datebox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -136,9 +138,9 @@
             // 
             // save_button
             // 
-            this.save_button.Location = new System.Drawing.Point(657, 325);
+            this.save_button.Location = new System.Drawing.Point(488, 382);
             this.save_button.Name = "save_button";
-            this.save_button.Size = new System.Drawing.Size(404, 53);
+            this.save_button.Size = new System.Drawing.Size(573, 53);
             this.save_button.TabIndex = 25;
             this.save_button.Text = "등록";
             this.save_button.UseVisualStyleBackColor = true;
@@ -194,11 +196,29 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 28;
             // 
+            // datebox
+            // 
+            this.datebox.Location = new System.Drawing.Point(629, 319);
+            this.datebox.Name = "datebox";
+            this.datebox.Size = new System.Drawing.Size(432, 35);
+            this.datebox.TabIndex = 30;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(532, 319);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 24);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.datebox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.save_button);
@@ -237,6 +257,8 @@
         private System.Windows.Forms.Button delbutton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.TextBox datebox;
+        private System.Windows.Forms.Label label4;
     }
 }
 
