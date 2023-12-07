@@ -49,7 +49,7 @@
             // 
             // titlebox
             // 
-            this.titlebox.Location = new System.Drawing.Point(178, 51);
+            this.titlebox.Location = new System.Drawing.Point(153, 113);
             this.titlebox.Name = "titlebox";
             this.titlebox.Size = new System.Drawing.Size(432, 35);
             this.titlebox.TabIndex = 18;
@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 51);
+            this.label1.Location = new System.Drawing.Point(67, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 24);
             this.label1.TabIndex = 17;
@@ -65,7 +65,7 @@
             // 
             // commentbox
             // 
-            this.commentbox.Location = new System.Drawing.Point(178, 124);
+            this.commentbox.Location = new System.Drawing.Point(153, 174);
             this.commentbox.Multiline = true;
             this.commentbox.Name = "commentbox";
             this.commentbox.Size = new System.Drawing.Size(432, 118);
@@ -74,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 124);
+            this.label2.Location = new System.Drawing.Point(8, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 19;
@@ -86,7 +86,7 @@
             this.comboBox_check.Items.AddRange(new object[] {
             "과제",
             "시험"});
-            this.comboBox_check.Location = new System.Drawing.Point(790, 54);
+            this.comboBox_check.Location = new System.Drawing.Point(153, 51);
             this.comboBox_check.Name = "comboBox_check";
             this.comboBox_check.Size = new System.Drawing.Size(187, 32);
             this.comboBox_check.TabIndex = 23;
@@ -94,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(693, 54);
+            this.label3.Location = new System.Drawing.Point(56, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 22;
@@ -104,7 +104,7 @@
             // 
             this.groupBox2.Controls.Add(this.check2);
             this.groupBox2.Controls.Add(this.check1);
-            this.groupBox2.Location = new System.Drawing.Point(697, 136);
+            this.groupBox2.Location = new System.Drawing.Point(650, 61);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 87);
             this.groupBox2.TabIndex = 24;
@@ -135,9 +135,9 @@
             // 
             // save_button
             // 
-            this.save_button.Location = new System.Drawing.Point(37, 298);
+            this.save_button.Location = new System.Drawing.Point(650, 191);
             this.save_button.Name = "save_button";
-            this.save_button.Size = new System.Drawing.Size(472, 53);
+            this.save_button.Size = new System.Drawing.Size(378, 53);
             this.save_button.TabIndex = 25;
             this.save_button.Text = "등록";
             this.save_button.UseVisualStyleBackColor = true;
@@ -148,9 +148,9 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(37, 464);
+            this.groupBox1.Location = new System.Drawing.Point(37, 427);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1001, 331);
+            this.groupBox1.Size = new System.Drawing.Size(1001, 368);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "check";
@@ -182,7 +182,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(947, 267);
             this.dataGridView1.TabIndex = 0;
             // 
             // Form1
