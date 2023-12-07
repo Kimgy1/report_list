@@ -87,7 +87,13 @@ namespace list
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = ds.Tables[comboBox1.Text];
 
+            foreach (DataGridViewRow oRow in dataGridView1.Rows)
+            {
+                oRow.HeaderCell.Value = oRow.Index.ToString();
+            }
+            dataGridView1.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
     }
 }
