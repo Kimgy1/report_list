@@ -72,9 +72,20 @@ namespace list
                 dt.Rows.Add(row);
                 ds.Tables.Add(dt);
             }
+
+            comboBox1_SelectedIndexChanged(this, null);
+
+            titlebox.Text = "";
+            commentbox.Text = "";
+            comboBox_check.Text = "";
         }
 
         private void delbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
