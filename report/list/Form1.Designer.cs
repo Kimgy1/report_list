@@ -42,6 +42,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.delbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -104,7 +105,7 @@
             // 
             this.groupBox2.Controls.Add(this.check2);
             this.groupBox2.Controls.Add(this.check1);
-            this.groupBox2.Location = new System.Drawing.Point(37, 338);
+            this.groupBox2.Location = new System.Drawing.Point(37, 369);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 87);
             this.groupBox2.TabIndex = 24;
@@ -187,11 +188,18 @@
             this.dataGridView1.Size = new System.Drawing.Size(947, 216);
             this.dataGridView1.TabIndex = 0;
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(37, 28);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
@@ -228,6 +236,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button delbutton;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
