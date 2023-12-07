@@ -44,6 +44,34 @@ namespace list
 
             else
                 dt = ds.Tables[comboBox_check.Text];
+
+            DataRow row = dt.NewRow();
+
+            row["Title"] = titlebox.Text;
+
+            row["Comment"] = commentbox.Text;
+
+
+
+            if (check1.Checked)
+            {
+                row["Check"] = "중요";
+            }
+            else if (check2.Checked)
+            {
+                row["Check"] = "보통";
+            }
+
+
+            if (bCheckTable)
+            {
+                ds.Tables[comboBox_check.Text].Rows.Add(row);
+            }
+            else
+            {
+                dt.Rows.Add(row);
+                ds.Tables.Add(dt);
+            }
         }
 
         private void delbutton_Click(object sender, EventArgs e)
