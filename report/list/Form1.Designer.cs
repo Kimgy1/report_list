@@ -40,7 +40,7 @@
             this.save_button = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.delbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -49,7 +49,7 @@
             // 
             // titlebox
             // 
-            this.titlebox.Location = new System.Drawing.Point(153, 113);
+            this.titlebox.Location = new System.Drawing.Point(629, 110);
             this.titlebox.Name = "titlebox";
             this.titlebox.Size = new System.Drawing.Size(432, 35);
             this.titlebox.TabIndex = 18;
@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 113);
+            this.label1.Location = new System.Drawing.Point(543, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 24);
             this.label1.TabIndex = 17;
@@ -65,7 +65,7 @@
             // 
             // commentbox
             // 
-            this.commentbox.Location = new System.Drawing.Point(153, 174);
+            this.commentbox.Location = new System.Drawing.Point(629, 171);
             this.commentbox.Multiline = true;
             this.commentbox.Name = "commentbox";
             this.commentbox.Size = new System.Drawing.Size(432, 118);
@@ -74,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 174);
+            this.label2.Location = new System.Drawing.Point(484, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 19;
@@ -86,7 +86,7 @@
             this.comboBox_check.Items.AddRange(new object[] {
             "과제",
             "시험"});
-            this.comboBox_check.Location = new System.Drawing.Point(153, 51);
+            this.comboBox_check.Location = new System.Drawing.Point(629, 48);
             this.comboBox_check.Name = "comboBox_check";
             this.comboBox_check.Size = new System.Drawing.Size(187, 32);
             this.comboBox_check.TabIndex = 23;
@@ -94,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 51);
+            this.label3.Location = new System.Drawing.Point(532, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 22;
@@ -104,7 +104,7 @@
             // 
             this.groupBox2.Controls.Add(this.check2);
             this.groupBox2.Controls.Add(this.check1);
-            this.groupBox2.Location = new System.Drawing.Point(650, 61);
+            this.groupBox2.Location = new System.Drawing.Point(37, 338);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 87);
             this.groupBox2.TabIndex = 24;
@@ -135,9 +135,9 @@
             // 
             // save_button
             // 
-            this.save_button.Location = new System.Drawing.Point(650, 191);
+            this.save_button.Location = new System.Drawing.Point(657, 325);
             this.save_button.Name = "save_button";
-            this.save_button.Size = new System.Drawing.Size(378, 53);
+            this.save_button.Size = new System.Drawing.Size(404, 53);
             this.save_button.TabIndex = 25;
             this.save_button.Text = "등록";
             this.save_button.UseVisualStyleBackColor = true;
@@ -146,11 +146,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.delbutton);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(37, 427);
+            this.groupBox1.Location = new System.Drawing.Point(37, 471);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1001, 368);
+            this.groupBox1.Size = new System.Drawing.Size(1001, 324);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "check";
@@ -167,14 +167,15 @@
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button1
+            // delbutton
             // 
-            this.button1.Location = new System.Drawing.Point(817, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 44);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "일정삭제";
-            this.button1.UseVisualStyleBackColor = true;
+            this.delbutton.Location = new System.Drawing.Point(817, 34);
+            this.delbutton.Name = "delbutton";
+            this.delbutton.Size = new System.Drawing.Size(154, 44);
+            this.delbutton.TabIndex = 2;
+            this.delbutton.Text = "일정삭제";
+            this.delbutton.UseVisualStyleBackColor = true;
+            this.delbutton.Click += new System.EventHandler(this.delbutton_Click);
             // 
             // dataGridView1
             // 
@@ -183,7 +184,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(947, 216);
             this.dataGridView1.TabIndex = 0;
             // 
             // Form1
@@ -225,7 +226,7 @@
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button delbutton;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

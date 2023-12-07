@@ -1,0 +1,10 @@
+C:\report1\report\list\bin\Debug\list.exe.config
+C:\report1\report\list\bin\Debug\list.exe
+C:\report1\report\list\bin\Debug\list.pdb
+C:\report1\report\list\obj\Debug\list.csproj.AssemblyReference.cache
+C:\report1\report\list\obj\Debug\list.Form1.resources
+C:\report1\report\list\obj\Debug\list.Properties.Resources.resources
+C:\report1\report\list\obj\Debug\list.csproj.GenerateResource.cache
+C:\report1\report\list\obj\Debug\list.csproj.CoreCompileInputs.cache
+C:\report1\report\list\obj\Debug\list.exe
+C:\report1\report\list\obj\Debug\list.pdb

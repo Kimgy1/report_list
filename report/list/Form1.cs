@@ -79,7 +79,7 @@ namespace list
             commentbox.Text = "";
             comboBox_check.Text = "";
         }
-
+        
         private void delbutton_Click(object sender, EventArgs e)
         {
             int iSelectRow = dataGridView1.SelectedRows[0].Index;
