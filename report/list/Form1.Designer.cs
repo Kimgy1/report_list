@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_check = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.check2 = new System.Windows.Forms.RadioButton();
+            this.check1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // titlebox
@@ -89,11 +91,35 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "선택";
             // 
+            // check2
+            // 
+            this.check2.AutoSize = true;
+            this.check2.Location = new System.Drawing.Point(879, 125);
+            this.check2.Name = "check2";
+            this.check2.Size = new System.Drawing.Size(89, 28);
+            this.check2.TabIndex = 25;
+            this.check2.TabStop = true;
+            this.check2.Text = "보통";
+            this.check2.UseVisualStyleBackColor = true;
+            // 
+            // check1
+            // 
+            this.check1.AutoSize = true;
+            this.check1.Location = new System.Drawing.Point(697, 125);
+            this.check1.Name = "check1";
+            this.check1.Size = new System.Drawing.Size(89, 28);
+            this.check1.TabIndex = 24;
+            this.check1.TabStop = true;
+            this.check1.Text = "중요";
+            this.check1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.check2);
+            this.Controls.Add(this.check1);
             this.Controls.Add(this.comboBox_check);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.commentbox);
@@ -115,6 +141,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox_check;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton check2;
+        private System.Windows.Forms.RadioButton check1;
     }
 }
 
