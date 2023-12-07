@@ -82,7 +82,10 @@ namespace list
 
         private void delbutton_Click(object sender, EventArgs e)
         {
+            int iSelectRow = dataGridView1.SelectedRows[0].Index;
+            ds.Tables[comboBox1.Text].Rows.RemoveAt(iSelectRow);
 
+            comboBox1_SelectedIndexChanged(this, null);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
