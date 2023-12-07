@@ -12,6 +12,7 @@ namespace list
 {
     public partial class Form1 : Form
     {
+        DataSet ds = new DataSet();
         public Form1()
         {
             InitializeComponent();
